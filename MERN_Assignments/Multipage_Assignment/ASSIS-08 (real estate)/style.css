@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./Photos/mainBackground.png");
+
+    color: white;
+}
+
+header nav {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-ul{
+    display: flex;
+}
+.nav-ul li{
+    font-size: 30px;
+    margin-right: 100px;
+}
+
+.content{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.content p{
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+button{
+    background: #6663e9;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 18px;
+    margin: 30px 0;
+    /* margin-bottom: 100px; */
+    cursor: pointer;
+}
+
+
+.logo{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo ul{
+    background-color: #6063f0;
+    display: flex;
+    border-radius: 50px;
+    margin-bottom: -50px;
+ 
+}
+
+.logo ul li{
+    color: #000000;
+margin-right: 70px;
+padding: 30px;
+font-size: 40px;
+font-weight: bolder;
+/* margin-top: -50px; */
+}
+
+
+section{ 
+    
+    margin: 90px 20px;
+}
+
+section h1{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(176, 127, 255);
+    text-shadow: 2px 2px  black;
+    margin-bottom:50px ;
+    
+}
+
+
+/* cardss-------------------------------------------------------------- */
+
+/* 
+.card{
+    margin: 20px;
+} */
+
+
+
+.card ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card ul li{
+    
+    margin: 20px;
+}
+
+.allcards img {
+    height: 350px;
+    width: 350px;
+    border-radius: 50px;
+
+}
+
+.allcards ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(207, 250, 250);
+    width: 300px;
+
+    border-radius: 30px;
+    position: relative;
+    top: -50px;
+    left: 25px;
+}
+
+.allcards li{
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+.allcards ul li button{
+    font-size: 15px;
+    padding: 10px;
+}
+
+
+
+/* article--------------------------------------------- */
+
+article{
+    margin: 30px;
+}
+
+.article-1 ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#image1{
+z-index: 2;
+border-radius: 30px;
+position: relative;
+left: 39px;
+top: 30px;
+    
+}
+
+#image2{
+    position: relative;
+    z-index: -1;
+    left: -90px;
+    top: -350px;
+
+}
+
+.article-li { margin-top: -400px;}
+
+.article-li h1 {
+    font-size: 50px;
+    
+}
+
+.article-li p {
+    font-size: 30px;
+}
+
+
+
+/* article 2---------------------------- */
+
+.article-container{
+    margin-top: -300px;
+}
+
+.article-2 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image2-1{
+    border-radius: 30px;
+    z-index: 1;
+    position: relative;
+    left: 70px;
+    top: -20px;
+}
+
+#image2-2{
+    position: relative;
+    top: -400px;
+    z-index: -1;
+}
+
+
+.article2-li { margin-top: -500px; }
+
+.article2-li h1 {
+    font-size: 50px;
+
+}
+.article2-li p{
+    font-size: 30px;
+}
+
+
+/* main */
+
+main{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6063f0;
+    margin: -350px 50px;
+    border-radius: 100px;
+   text-align: justify;
+   padding: 20px;
+}
+
+main h1{
+    font-size: 70px;
+    color: white;
+}
+
+main p{
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+main input{
+    padding: 20px;
+    border-radius: 60px;
+    border: none;
+    padding: 20px 50px;
+}
+
+main button{
+    background-color: black;
+}
+
+
+
+
+/* footer-------------------------------- */
+footer {
+    display: flex;
+    align-items: flex-start;
+    margin: 500px 100px;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+  
+  footer div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  footer div:first-child img {
+    width: 150px;
+  }
+  
+  footer div:first-child div img {
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+  }
+  
+  footer div:first-child p {
+    width: 323px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  
+  /* designing the footer links */
+  .footer-links {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 120px;
+  }
+  
+  .footer-links-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-links-content ul li a {
+    color: black;
+  }
+  
+  .footer-links-content ul li:first-child {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  .footer-links-content ul li{
+      margin-bottom: 25px;
+  }

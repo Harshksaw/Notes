@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #dde7e9;
+    
+}
+
+
+/* nav-------------------------------------- */
+
+header{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+.nav-ul{
+    display: flex;
+    
+}
+
+.nav-ul li a{
+    text-decoration: none;
+    font-size: 23px;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-ul li{
+    margin-left: 60px;
+}
+
+
+
+
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 92px;
+    flex-wrap: wrap;
+}
+
+.section-left{
+
+    background-image: url("images/stethoscope.png");
+    background-size: cover;
+    /* width: 30%; */
+     margin: 50px 0;
+     margin-right: -100px;
+ 
+    /* margin-left: -100px; */
+}
+
+.section-left h1{
+   
+    font-size: 40px
+}
+.section-left p { font-size: 20px; margin: 15px 0; }
+.section-left button{
+
+    padding: 12px;
+    background-color: #128812;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 20px;
+    border: none;
+    margin: 20px 0;
+}
+
+#bottomAngle{
+
+    margin-left: 180px;
+}
+
+
+
+
+/* .section-right { width: 20%; } */
+
+.section-right img{
+    height: 480px;
+    width: 800px;
+    
+}
+
+#orangecircle{
+    position: relative;
+    z-index: 0;
+    right: -200px;
+    /* bottom: 500px; */
+    top: -50px;
+}
+
+#greencicle{
+    position: relative;
+    z-index: -1;
+    right: -50px;
+}
+#doctor{
+    /* width: 300px; */
+    height: 300px;
+    position: relative;
+    right: 250px;
+    z-index: 1;
+}
+
