@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pw Skills Blog</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul class="nav-items">
+                <li>
+                    <a href="./index.html" class="logo">PwSkills Blog</a>
+                </li>
+                <li>
+                    <button class="plus-btn" id="addNewBlog">+</button>
+                </li>
+            </ul>
+        </nav>
+        <main class="blog-container">
+            <section class="blog-lists" id="blog-list">
+                <!-- <div class="blogs">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgFbu1-RyOXUSMNeSoga6Xh21A2kj0kCvfPuzc3cUmhg&s"
+                        alt="" class="blog-img">
+                    <h3 class="blog-title">This is blog title</h3>
+                    <span class="blog-dec">This is a blog decription</span>
+                    <button class="read-blog">Read</button>
+                </div> -->
+            </section>
+        </main>
+        <div class="model" id="model">
+            <div class="model-container">
+                <button class="close" id="close">&#x2715;</button>
+                <form>
+                    <input type="text" placeholder="Enter blog image url" id="img-url">
+                    <input type="text" placeholder="Enter blog title" id="blog-title">
+                    <input type="text" placeholder="Enter blog decription" id="blog-dec">
+                    <textarea name="content" id="content" cols="30" rows="10" placeholder="write"></textarea>
+                    <button class="add-blog" id="addBlog">Add Blog</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

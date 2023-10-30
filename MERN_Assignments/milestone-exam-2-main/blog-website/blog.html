@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - PwSkills Blog</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul class="nav-items">
+                <li>
+                    <a href="./index.html" class="logo">PwSkills Blog</a>
+                </li>
+                <li>
+                    <button class="plus-btn" id="backBtn">←</button>
+                </li>
+            </ul>
+        </nav>
+        <main class="blog-container">
+            <section class="blog-content" id="blogContent">
+                <div class="blog-header">
+                    <div class="blog-heading">
+                        <h2 class="title" id="title"></h2>
+                        <span class="blog-dec" id="description"></span>
+                    </div>
+                    <img src="" alt="photo" class="blog-img" id="blog-img">
+                </div>
+                <div>
+                    <p class="para"></p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back()
+        }
+
+        function displayBlogsContent() {
+            const titleElement = document.getElementById('title');
+            const descriptionElement = document.getElementById('description');
+            const blogImgElement = document.getElementById('blog-img');
+            const paraElement = document.querySelector(".para");
+
+            const currentBlog = JSON.parse(sessionStorage.getItem("currentBlog"));
+
+            titleElement.innerText = currentBlog.title;
+            descriptionElement.innerText = currentBlog.description;
+            blogImgElement.setAttribute('src', currentBlog.imgUrl);
+            paraElement.innerHTML = currentBlog.content;
+        }
+
+
+        document.getElementById('backBtn').addEventListener('click', goBack)
+        displayBlogsContent()
+    </script>
+</body>
+
+</html>
