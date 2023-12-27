@@ -1,9 +1,11 @@
 import { test, expect } from '@playwright/test';
-import path from 'path';
+import HomePage from "../pages/home.page"
 
 test.describe('Uploadfile', () => {
 
-    test('Verify button',async ({page}) => {
+    let homePage;
+    test('OpenHome Page and ver',async ({page}) => {
+        homePage = new HomePage(page);
 
         await page.goto('https://the-internet.herokuapp.com/upload');
 
@@ -11,7 +13,7 @@ test.describe('Uploadfile', () => {
             const filepath = path.join(__dirname , './data/my.jpeg');
 
 
-
+        // await homePage.getStartedBtn.
         //upload test file
         await page.setInputFiles('input#file-upload', filepath)
 
