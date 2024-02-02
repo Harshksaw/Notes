@@ -1,0 +1,45 @@
+
+
+#singlePhoto { 
+    display: flex;
+    background-color: rgb(4,46,94);
+    flex-direction: row;
+    color: white;
+    width: 800px;
+    justify-self: center;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    margin: auto;
+    align-self: center;
+    align-content: center;
+    margin-top: 140px;
+    padding: 20px;
+}
+#singlePhoto h1 {
+     font-size: 27px;
+     padding: 10px;
+}
+
+#singlePhoto p  {
+    font-size: 15px;
+    padding: 10px;
+}
+
+#singlePhoto * {
+    margin: auto;
+}
+
+#singlePhoto img{ 
+    width: 300px;
+    object-fit: cover;
+    box-shadow: 1.5px 1.5px 3.5px 3px rgb(66, 107, 154);
+    height: 250px;
+    border-radius: 10px;
+    
+}
+
+
+
+
+#singlePhoto div  {
+    padding: 20px;
+}

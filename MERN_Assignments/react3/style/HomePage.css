@@ -1,0 +1,24 @@
+#parent { 
+    display: grid;
+    min-width: 100%;
+    grid-template-columns: repeat(4,200px);
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+   
+}
+#parent *{
+    margin: auto;
+}
+
+#parent div{
+
+    margin: auto;
+}
+#parent img { 
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}

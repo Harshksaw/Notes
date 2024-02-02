@@ -1,0 +1,17 @@
+*{
+    text-align: center;
+}
+input  {
+     width: 220px;
+     height: 40px;
+     border: none;
+     margin-bottom: 40px;
+     border: 2px solid rgb(36,36,36);
+
+}
+#imageContainer {
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    justify-content: center;
+    gap: 20px;
+}
